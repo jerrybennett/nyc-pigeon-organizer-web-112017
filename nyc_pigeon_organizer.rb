@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list[name].include?(k)
           pigeon_list[name][key] = []
         end
-        if data[k].include?(name)
+        if data[arr].include?(name)
           pigeon_list[name][key] << k.to_s
         end
       end
