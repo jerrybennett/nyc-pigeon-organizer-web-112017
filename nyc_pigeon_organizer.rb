@@ -9,6 +9,8 @@ def nyc_pigeon_organizer(data)
         end
         if !pigeon_list[name].include?(k)
           pigeon_list[name][key] = [k.to_s]
+        else
+          pigeon_list[name][key] << k.to_s
         end
       end
     end
