@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |key, hash|
@@ -25,6 +25,6 @@ def nyc_pigeon_organizer(data)
 
 
 
-  binding.pry
+  # binding.pry
   return pigeon_list
 end
