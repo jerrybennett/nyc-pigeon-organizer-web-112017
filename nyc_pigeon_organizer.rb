@@ -13,13 +13,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  # data.each do |key, hash|
-  #   hash.each do |k, arr|
-  #     arr.each do |name|
-  #
-  #     end
-  #   end
-  # end
 
   binding.pry
   return pigeon_list
