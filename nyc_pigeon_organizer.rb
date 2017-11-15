@@ -10,15 +10,6 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list[name].include?(k)
           pigeon_list[name][key] = []
         end
-        pigeon_list.each do |ka, h|
-          h.each do |kb, arrb|
-            arrb.each do |item|
-              if pigeon_list[name].include?(data[k])
-                pigeon_list[name][key] << k.to_s
-              end
-            end
-          end
-        end
       end
     end
   end
