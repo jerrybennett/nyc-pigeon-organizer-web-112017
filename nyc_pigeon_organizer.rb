@@ -8,11 +8,22 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name] = {}
         end
         if !pigeon_list[name].include?(k)
-          pigeon_list[name][key] = [k]
+          pigeon_list[name][key] = [k.to_s]
         end
+          pigeon_list.each do |ka, h|
+            h.each do |kb, arrb|
+              arrb.each do |i|
+                if pigeon_list[name].include?(k)
+                  pigeon_list[name][key] << k.to_s
+                end
+              end
+            end
+          end
       end
     end
   end
+
+
 
   # binding.pry
   return pigeon_list
